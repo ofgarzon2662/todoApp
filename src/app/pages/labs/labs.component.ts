@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { signal } from '@angular/core';
 
 @Component({
   selector: 'app-labs',
@@ -10,9 +11,10 @@ export class LabsComponent {
   tasks = [
     'Instalar Angular CLI',
     'Crear proyecto',
-    'Crear componente'  ];
+    'Crear componente',
+    'Crear Servicio'  ];
 
-    name = 'Juan';
+    name = Signal('Juan');
     edad = 25;
     disabled = true;
     img = 'https://angular.io/assets/images/logos/angular/angular.svg';
